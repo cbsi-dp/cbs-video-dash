@@ -603,6 +603,13 @@
 	<script src='bootstrap.js'></script>
 	<script>
 		$('.last_night_table').width(($('.last_night_table').parent().width()/2)-10);
+		
+		if($(window).height() === 1080 && $(window).width() === 1920) {
+			$('.row-fluid').css('padding-bottom': '50px');
+		}
+		
+		console.log($(window).height());
+		console.log($(window).width());
 	</script>
 </body>
 </html>
