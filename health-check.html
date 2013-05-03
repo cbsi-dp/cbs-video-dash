@@ -604,12 +604,12 @@
 	<script>
 		$('.last_night_table').width(($('.last_night_table').parent().width()/2)-10);
 		
-		if($(window).height() === 1080 && $(window).width() === 1920) {
-			$('.row-fluid').css({'padding-bottom': '50px'});
+		if($(window).width() > 1500) {
+			$('.row-fluid').css({'padding-bottom': '25px'});
 		}
 		
-		console.log($(window).height());
 		console.log($(window).width());
+		console.log($(window).height());
 	</script>
 </body>
 </html>
